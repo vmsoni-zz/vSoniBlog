@@ -1,0 +1,242 @@
+body {
+    background-color: white;
+    padding: 0;
+}
+
+.nav-container{
+	width: 100%; 
+	position: fixed;
+	z-index: 1;
+	height: 0%;
+	margin: 0 auto;
+}
+
+.nav-tab-container{
+	margin-left: 37%;
+	width: 50%;  
+}
+
+.back-image-waterloo{
+	width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(waterloo.png) no-repeat;
+}
+
+.content-top-page{
+	text-align: center;
+	font-size: 130%;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-color: transparent;
+	margin: 0 auto;
+}
+
+.back-image-waterloo2-div{
+    filter: opacity(30%);
+	height: 100%;
+	width: 100%;
+	z-index = 1;
+}
+
+.back-image-waterloo2{
+    filter: opacity(30%);
+	height: 75%;
+	width: 100%;
+	z-index = 1;
+}
+
+.content-main{
+	margin-left: 12%;	
+	position: absolute;
+}
+
+.content-skills{
+	position: absolute;
+}
+
+.table-main{
+	text-align:center;
+	margin-left:2%;
+	margin-right: 6%
+}
+
+.circular {
+	width: 100px;
+	height: 100px;
+	position:fixed;
+	z-index: 100;
+}
+
+.h1-class {
+    color: black;
+	margin-top: 0.5%;
+	position: fixed;
+	text-align: Left;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	margin-left:6.5%;
+	font-variant: normal;
+	font-weight: 700;
+}
+
+@media(max-width: 1100px){
+.nav-tab-container{
+	width: 100%; 
+	margin-left: 0%;
+}
+
+.side-nav{
+	display:none;
+}
+
+.content-main{
+	margin-left: 0%;
+	text-align: center;
+}
+
+.content-top-page{
+	text-align: center;
+	font-size: 130%;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-color: transparent;
+	margin-left: 0%;
+}
+
+.circular {
+	display: none;
+}
+
+.h1-class {
+	display: none;
+}
+}
+
+.ul-class {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+	border-top-right-radius: 50px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    background-color: #f1f1f1;
+	margin-top: 9.4%;
+	z-index: 1;
+	height: 100%; /* Full height */
+	vertical-align: bo;
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}	
+	
+.li-a {
+    display: block;
+	vertical-align: center;
+    color: #000;
+	height: 5%;
+	vertical-align: center;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+	font-family:Arial;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+/* Change the link color on hover */
+.li-a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active-tab {
+	display: block;
+	vertical-align: center;
+	height: 5%;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+	font-family:Arial;
+	font-weight: 700;
+	font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.email_form_h3{
+	background: #00CC33;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+/*Emailing CSS */
+.email_form{
+	font: 95% Arial, Helvetica, sans-serif;
+	margin-top: 30%;
+	margin-left: 8%;
+	max-width: 400px;
+	padding: 16px;
+	background: #F7F7F7;
+}
+.email_form input[type="text"],
+.email_form input[type="email"],
+.email_form input[type="number"],
+.email_form input[type="Subject"],
+.email_form textarea,
+.email_form select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.email_form input[type="text"]:focus,
+.email_form input[type="email"]:focus,
+.email_form input[type="number"]:focus,
+.email_form input[type="subject"]:focus,
+.email_form textarea:focus,
+.email_form select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.email_form input[type="submit"],
+.email_form input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #009900;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.email_form input[type="submit"]:hover,
+.email_form input[type="button"]:hover{
+	background: #00CC00;
+}
